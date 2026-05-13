@@ -536,8 +536,12 @@ export default function App() {
                   目前在<strong className="text-slate-900 font-semibold">华中科技大学</strong>攻读设计学硕士 (GPA 3.87)，本科毕业于<strong className="text-slate-900 font-semibold">重庆大学</strong>产品设计专业 (GPA 3.59)。拥有扎实的 985 本硕双一流学术背景与跨学科交叉设计经验。
                 </p>
                 <p>
+                逻辑严谨、用户体验敏感度高、创意落地能力强，具备良好的跨学科协作与项目推进能力。英语通过 CET-6，可流畅阅读英文献。
+                </p>
+                <p>
                   我的研究与实践从不仅停留在视觉层面，具备敏锐的用户嗅觉和独立落地产品的能力，期望将跨学科协作的创意与严谨的逻辑思维带入更广阔的商业舞台。
                 </p>
+              
               </Reveal>
             </BentoCard>
 
@@ -556,7 +560,7 @@ export default function App() {
                   <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider">Product Strategy</h3>
                   <div className="flex flex-wrap gap-2">
                     <GlassPill>需求拆解</GlassPill>
-                    <GlassPill>商业化落地</GlassPill>
+                    <GlassPill>原型设计</GlassPill>
                     <GlassPill>竞品分析</GlassPill>
                     <GlassPill>PRD输出</GlassPill>
                   </div>
@@ -564,7 +568,7 @@ export default function App() {
                 <Reveal delay={600}>
                   <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider">Design & AI</h3>
                   <div className="flex flex-wrap gap-2">
-                    <GlassPill><Layout size={14} className="text-slate-400"/> Layout</GlassPill>
+                    <GlassPill><Layout size={14} className="text-slate-400"/> 体验设计</GlassPill>
                     <GlassPill><Code size={14} className="text-slate-400"/> AI 低代码开发</GlassPill>
                     <GlassPill>交互设计</GlassPill>
                     <GlassPill>用户研究</GlassPill>
@@ -574,6 +578,7 @@ export default function App() {
                   <h3 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider">Tools</h3>
                   <div className="flex flex-wrap gap-2">
                     <GlassPill><Sparkles size={14} className="text-indigo-500" /> Vibe coding</GlassPill>
+                    <GlassPill>Figma</GlassPill>
                     <GlassPill>Xmind</GlassPill>
                     <GlassPill>PS</GlassPill>
                     <GlassPill>SPSS</GlassPill>
