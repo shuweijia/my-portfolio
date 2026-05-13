@@ -127,6 +127,7 @@ const GlassPill = ({ children, className = "" }) => (
   </span>
 );
 
+// DeepSeek API Key - 在 https://platform.deepseek.com/ 获取
 const apiKey = "";
 
 const SYSTEM_PROMPT = `你现在是舒惟佳(Weijia Shu)的个人AI数字助理。
@@ -237,15 +238,23 @@ const AIChatWidget = () => {
     setMessages(newMessages);
     setIsLoading(true);
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
-    const contents = newMessages.map(msg => ({
-      role: msg.role === 'user' ? 'user' : 'model',
-      parts: [{ text: msg.text }]
-    }));
+    // DeepSeek API (OpenAI 兼容格式)
+    const url = 'https://api.deepseek.com/v1/chat/completions';
+    
+    // 转换消息格式为 OpenAI 格式
+    const formattedMessages = [
+      { role: 'system', content: SYSTEM_PROMPT },
+      ...newMessages.map(msg => ({
+        role: msg.role === 'user' ? 'user' : 'assistant',
+        content: msg.text
+      }))
+    ];
 
     const payload = {
-      contents,
-      systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] }
+      model: 'deepseek-chat',
+      messages: formattedMessages,
+      temperature: 0.7,
+      max_tokens: 800
     };
 
     let retries = 5;
@@ -256,12 +265,15 @@ const AIChatWidget = () => {
       try {
         const res = await fetch(url, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+          },
           body: JSON.stringify(payload)
         });
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         const data = await res.json();
-        responseText = data.candidates?.[0]?.content?.parts?.[0]?.text || "抱歉，我没有完全理解，能换个说法吗？";
+        responseText = data.choices?.[0]?.message?.content || "抱歉，我没有完全理解，能换个说法吗？";
         break; 
       } catch (error) {
         retries -= 1;
