@@ -22,7 +22,7 @@ import {
   Recycle,
   Coffee,
   BatteryCharging
-} from 'Lucide-react';
+} from 'lucide-react';
 
 // --- Reusable Components ---
 
@@ -128,7 +128,7 @@ const GlassPill = ({ children, className = "" }) => (
 );
 
 // DeepSeek API Key - 在 https://platform.deepseek.com/ 获取
-const apiKey = "";
+const apiKey = "sk-026d5ad446c94636adffaac22e0b5f60";
 
 const SYSTEM_PROMPT = `你现在是舒惟佳(Weijia Shu)的个人AI数字助理。
 你的任务是回答访客关于她的背景、技能、项目和求职意向的问题。
