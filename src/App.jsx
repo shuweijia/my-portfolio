@@ -23,6 +23,10 @@ import {
   Coffee,
   BatteryCharging
 } from 'lucide-react';
+import CRMCaseStudy from './CRMCaseStudy';
+import DragonflyModal from './DragonflyModal';
+import BeeHiveModal from './BeeHiveModal';
+import ICPBModal from './ICPBModal';
 
 // --- Reusable Components ---
 
@@ -394,6 +398,10 @@ const AIChatWidget = () => {
 
 export default function App() {
   const [mounted, setMounted] = useState(false);
+  const [showCRMModal, setShowCRMModal] = useState(false);
+  const [showDragonflyModal, setShowDragonflyModal] = useState(false);
+  const [showBeeHiveModal, setShowBeeHiveModal] = useState(false);
+  const [showICPBModal, setShowICPBModal] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -528,7 +536,7 @@ export default function App() {
                   目前在<strong className="text-slate-900 font-semibold">华中科技大学</strong>攻读设计学硕士 (GPA 3.87)，本科毕业于<strong className="text-slate-900 font-semibold">重庆大学</strong>产品设计专业 (GPA 3.59)。拥有扎实的 985 本硕双一流学术背景与跨学科交叉设计经验。
                 </p>
                 <p>
-                  我的研究与实践从不仅停留在视觉层面，更深入探索<strong className="text-slate-900 font-semibold">数据故事理论 </strong> 与叙事性可视化在产品设计中的应用。具备敏锐的用户嗅觉和独立落地产品的能力，期望将跨学科协作的创意与严谨的逻辑思维带入更广阔的商业舞台。
+                  我的研究与实践从不仅停留在视觉层面，具备敏锐的用户嗅觉和独立落地产品的能力，期望将跨学科协作的创意与严谨的逻辑思维带入更广阔的商业舞台。
                 </p>
               </Reveal>
             </BentoCard>
@@ -728,14 +736,12 @@ export default function App() {
                   </div>
                 </div>
 
-                <a 
-                  href="https://gemini.google.com/share/02984da4a7e3" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={() => setShowCRMModal(true)}
                   className="inline-flex items-center gap-2 text-slate-900 font-semibold hover:gap-4 transition-all duration-300 w-max group/btn"
                 >
                   View Case Study <ArrowRight size={18} className="text-blue-500 group-hover/btn:text-slate-900 transition-colors" />
-                </a>
+                </button>
               </Reveal>
             </div>
 
@@ -795,14 +801,12 @@ export default function App() {
                   </div>
                 </div>
 
-                <a 
-                  href="https://gemini.google.com/share/a28428bcb634" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={() => setShowDragonflyModal(true)}
                   className="inline-flex items-center gap-2 text-slate-900 font-semibold hover:gap-4 transition-all duration-300 w-max group/btn"
                 >
                   View Case Study <ArrowRight size={18} className="text-red-500 group-hover/btn:text-slate-900 transition-colors" />
-                </a>
+                </button>
               </Reveal>
             </div>
 
@@ -848,14 +852,12 @@ export default function App() {
                   </div>
                 </div>
 
-                <a 
-                  href="https://gemini.google.com/share/f034012fe0ee" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={() => setShowBeeHiveModal(true)}
                   className="inline-flex items-center gap-2 text-slate-900 font-semibold hover:gap-4 transition-all duration-300 w-max group/btn"
                 >
                   View Case Study <ArrowRight size={18} className="text-amber-500 group-hover/btn:text-slate-900 transition-colors" />
-                </a>
+                </button>
               </Reveal>
             </div>
 
@@ -901,14 +903,12 @@ export default function App() {
                   </div>
                 </div>
 
-                <a 
-                  href="https://gemini.google.com/share/73ce4ae2e919" 
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={() => setShowICPBModal(true)}
                   className="inline-flex items-center gap-2 text-slate-900 font-semibold hover:gap-4 transition-all duration-300 w-max group/btn"
                 >
                   View Case Study <ArrowRight size={18} className="text-cyan-500 group-hover/btn:text-slate-900 transition-colors" />
-                </a>
+                </button>
               </Reveal>
             </div>
 
@@ -916,6 +916,18 @@ export default function App() {
         </section>
 
       </main>
+
+      {/* CRM Case Study Modal */}
+      <CRMCaseStudy isOpen={showCRMModal} onClose={() => setShowCRMModal(false)} />
+
+      {/* Dragonfly Case Study Modal */}
+      <DragonflyModal isOpen={showDragonflyModal} onClose={() => setShowDragonflyModal(false)} />
+
+      {/* BeeHive Case Study Modal */}
+      <BeeHiveModal isOpen={showBeeHiveModal} onClose={() => setShowBeeHiveModal(false)} />
+
+      {/* ICPB Case Study Modal */}
+      <ICPBModal isOpen={showICPBModal} onClose={() => setShowICPBModal(false)} />
 
       {/* --- Footer --- */}
       <footer className="border-t border-slate-200 py-12 text-center text-slate-500 text-sm bg-white">
