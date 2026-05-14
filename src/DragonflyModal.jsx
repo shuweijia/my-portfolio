@@ -117,7 +117,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
         <section className="mb-32">
           <div className="w-full rounded-2xl border border-red-200 bg-white overflow-hidden shadow-2xl">
             <img 
-              src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/DRAGONFL%20UAV.jpg" 
+              src="/images/DRAGONFL UAV.jpg" 
               alt="蜓火无人机主渲染图" 
               className="w-full h-auto object-cover" 
             />
@@ -150,7 +150,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
           </div>
           
           <div className="mt-12 flex justify-center">
-            <img src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/user%20map.png" alt="火灾数据调研图表" className="max-w-full h-auto max-h-[800px] object-contain bg-gradient-to-br from-red-50 to-white p-2 md:p-6 rounded-xl border border-red-100 shadow-[0_0_30px_rgba(239,68,68,0.08)]" />
+            <img src="/images/user map.png" alt="火灾数据调研图表" className="max-w-full h-auto max-h-[800px] object-contain bg-gradient-to-br from-red-50 to-white p-2 md:p-6 rounded-xl border border-red-100 shadow-[0_0_30px_rgba(239,68,68,0.08)]" />
           </div>
         </section>
 
@@ -186,7 +186,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
                 </ul>
               </div>
               <div className="md:w-1/2 w-full flex justify-center items-center">
-                <img src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/dengguang.png" alt="信号灯交互界面展示" className="max-w-full h-auto max-h-96 object-contain bg-white/60 p-2 rounded-xl border border-red-100 shadow-sm" />
+                <img src="/images/dengguang.png" alt="信号灯交互界面展示" className="max-w-full h-auto max-h-96 object-contain bg-white/60 p-2 rounded-xl border border-red-100 shadow-sm" />
               </div>
             </div>
 
@@ -201,7 +201,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
                 </p>
               </div>
               <div className="md:w-1/2 w-full flex justify-center items-center">
-                <img src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/camera.png" alt="手势识别镜头与交互演示" className="max-w-full h-auto max-h-96 object-contain bg-white/60 p-2 rounded-xl border border-red-100 shadow-sm" />
+                <img src="/images/camera.png" alt="手势识别镜头与交互演示" className="max-w-full h-auto max-h-96 object-contain bg-white/60 p-2 rounded-xl border border-red-100 shadow-sm" />
               </div>
             </div>
 
@@ -218,7 +218,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
                 </p>
               </div>
               <div className="md:w-1/2 w-full flex justify-center items-center">
-                <img src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/changjing.jpg" alt="语音模块与界面展示" className="max-w-full h-auto max-h-96 object-contain bg-white/60 p-2 rounded-xl border border-red-100 shadow-sm" />
+                <img src="/images/changjing.jpg" alt="语音模块与界面展示" className="max-w-full h-auto max-h-96 object-contain bg-white/60 p-2 rounded-xl border border-red-100 shadow-sm" />
               </div>
             </div>
             
@@ -233,7 +233,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
                 </p>
               </div>
               <div className="md:w-1/2 w-full flex justify-center items-center">
-                <img src="https://raw.githubusercontent.com/shuweijia/portfolio/main/sky-land.png" alt="空陆转换姿态" className="max-w-full h-auto max-h-96 object-contain bg-white/60 p-2 rounded-xl border border-red-100 shadow-sm" />
+                <img src="/images/sky-land.png" alt="空陆转换姿态" className="max-w-full h-auto max-h-96 object-contain bg-white/60 p-2 rounded-xl border border-red-100 shadow-sm" />
               </div>
             </div>
 
@@ -250,7 +250,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
               <p className="text-slate-600 mb-6 leading-relaxed flex-grow">
                 无人机不仅限于侦查，更具备直接干预火场的能力。通过声波灭火技术和精准投放干粉灭火球，在火场内部进行一定程度的灭火作业。为消防员提前开辟救援通道，或为被困者扫除逃生障碍。
               </p>
-              <img src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/toufang.png" alt="灭火模块细节" className="max-w-full h-auto max-h-64 mx-auto block object-contain bg-white/50 p-2 rounded-xl border border-red-50 shadow-sm" />
+              <img src="/images/toufang.png" alt="灭火模块细节" className="max-w-full h-auto max-h-64 mx-auto block object-contain bg-white/50 p-2 rounded-xl border border-red-50 shadow-sm" />
             </div>
 
             <div className="bg-white/60 backdrop-blur-md border border-red-100 shadow-sm p-8 rounded-2xl flex flex-col">
@@ -259,7 +259,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
               <p className="text-slate-600 mb-6 leading-relaxed flex-grow">
                 机身搭载紧急医疗物资舱，可在第一时间向被困者投递急救包、防烟面罩等物资。配备高清显示屏幕，可通过视频画面直接为被困者演示急救步骤或展示逃生地图。
               </p>
-              <img src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/yaopin.png" alt="医疗物资舱与高清显示屏幕细节" className="max-w-full h-auto max-h-64 mx-auto block object-contain bg-white/50 p-2 rounded-xl border border-red-50 shadow-sm" />
+              <img src="/images/yaopin.png" alt="医疗物资舱与高清显示屏幕细节" className="max-w-full h-auto max-h-64 mx-auto block object-contain bg-white/50 p-2 rounded-xl border border-red-50 shadow-sm" />
             </div>
 
           </div>
@@ -294,7 +294,7 @@ export default function DragonflyModal({ isOpen, onClose }) {
               </div>
 
               <div className="lg:w-1/3 w-full flex justify-center items-center">
-                <img src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/baozhatu.png" alt="无人机爆炸图" className="max-w-full h-auto max-h-[600px] object-contain bg-white/60 p-4 rounded-xl border border-red-100 shadow-[0_4px_20px_rgba(234,88,12,0.08)]" />
+                <img src="/images/baozhatu.png" alt="无人机爆炸图" className="max-w-full h-auto max-h-[600px] object-contain bg-white/60 p-4 rounded-xl border border-red-100 shadow-[0_4px_20px_rgba(234,88,12,0.08)]" />
               </div>
 
               <div className="lg:w-1/3 space-y-8">

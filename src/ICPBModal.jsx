@@ -112,7 +112,7 @@ export default function ICPBModal({ isOpen, onClose }) {
             <section className="mb-32">
               <div className="w-full rounded-2xl border border-sky-200 bg-white overflow-hidden shadow-2xl">
                 <img 
-                  src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/ICPB.jpg" 
+                  src="/images/ICPB.jpg" 
                   alt="ICPB主效果图" 
                   className="w-full h-auto object-cover" 
                 />
@@ -213,7 +213,7 @@ export default function ICPBModal({ isOpen, onClose }) {
               
               <div className="bg-white rounded-2xl shadow-sm p-4 border border-gray-100">
                 <img 
-                  src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/cdb-caotu.png" 
+                  src="/images/cdb-caotu.png" 
                   alt="草图构想" 
                   className="w-full h-auto object-contain rounded-xl"
                 />
@@ -239,7 +239,7 @@ export default function ICPBModal({ isOpen, onClose }) {
                     扫码弹出充电宝
                   </div>
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/cdb-tanchu.jpg" 
+                    src="/images/cdb-tanchu.jpg" 
                     alt="扫码弹出充电宝" 
                     className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
                   />
@@ -250,7 +250,7 @@ export default function ICPBModal({ isOpen, onClose }) {
                     拿出充电宝
                   </div>
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/cdb-naqu.jpg" 
+                    src="/images/cdb-naqu.jpg" 
                     alt="拿出充电宝" 
                     className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
                   />
@@ -261,7 +261,7 @@ export default function ICPBModal({ isOpen, onClose }) {
                     给手机充电
                   </div>
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/cdb-chongdian.jpg" 
+                    src="/images/cdb-chongdian.jpg" 
                     alt="给手机充电" 
                     className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
                   />
@@ -270,7 +270,7 @@ export default function ICPBModal({ isOpen, onClose }) {
 
               <div className="rounded-3xl overflow-hidden shadow-2xl relative">
                 <img 
-                  src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/cdbchangjing.jpg" 
+                  src="/images/cdbchangjing.jpg" 
                   alt="最终方案渲染图" 
                   className="w-full h-auto object-contain bg-sky-50"
                 />

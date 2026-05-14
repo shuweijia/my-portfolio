@@ -505,7 +505,7 @@ export default function App() {
             >
               <Reveal delay={300} className="w-28 h-28 rounded-full p-1 mb-4 bg-gradient-to-tr from-slate-100 to-slate-200 shadow-sm border border-slate-200/50">
                 <img 
-                  src="https://raw.githubusercontent.com/shuweijia/-/refs/heads/main/zhengjianzhao.JPG" 
+                  src="/images/zhengjianzhao.JPG" 
                   alt="Weijia Shu Avatar" 
                   className="w-full h-full object-cover rounded-full border-2 border-white"
                 />
@@ -647,7 +647,7 @@ export default function App() {
                 <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
                   {/* 1. 真实图片图层 (替换 src) */}
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/-/refs/heads/main/mindanchor.png" 
+                    src="/images/mindanchor.png" 
                     alt="MindAnchor App" 
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover/img:scale-105"
                   />
@@ -703,7 +703,7 @@ export default function App() {
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
                 <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/-/refs/heads/main/cargoware.png" 
+                    src="/images/cargoware.png" 
                     alt="CargoWare Dashboard" 
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover/img:scale-105"
                   />
@@ -769,7 +769,7 @@ export default function App() {
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
                 <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/-/refs/heads/main/DRAGONFL%20UAV.jpg" 
+                    src="/images/DRAGONFL UAV.jpg" 
                     alt="DRAGONFLY UAV" 
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover/img:scale-105"
                   />
@@ -820,7 +820,7 @@ export default function App() {
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
                 <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/-/refs/heads/main/BEE%20HIVE.png" 
+                    src="/images/BEE HIVE.png" 
                     alt="BEE HIVE IoT" 
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover/img:scale-105"
                   />
@@ -871,7 +871,7 @@ export default function App() {
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
                 <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/-/refs/heads/main/ICPB.jpg" 
+                    src="/images/ICPB.jpg" 
                     alt="ICPB Power Bank" 
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover/img:scale-105"
                   />

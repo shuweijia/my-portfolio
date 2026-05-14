@@ -109,7 +109,7 @@ export default function BeeHiveModal({ isOpen, onClose }) {
             <section className="mb-32">
               <div className="w-full rounded-2xl border border-yellow-200 bg-white overflow-hidden shadow-2xl">
                     <img 
-                  src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/BEE%20HIVE.png" 
+                  src="/images/BEE HIVE.png" 
                   alt="BEE HIVE 产品主效果图" 
                   className="w-full h-auto object-cover" 
                 />
@@ -151,7 +151,7 @@ export default function BeeHiveModal({ isOpen, onClose }) {
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                   <img 
-                src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/zhuanbianfengchao.png" 
+                src="/images/zhuanbianfengchao.png" 
                 alt="头脑风暴与结构创意" 
                 className="rounded-2xl shadow-lg w-full h-auto object-contain bg-white p-4"
               />
@@ -236,7 +236,7 @@ export default function BeeHiveModal({ isOpen, onClose }) {
                   <h3 className="text-2xl font-bold">草图推演 (Sketches)</h3>
                   <p className="text-gray-600">通过多次仿生形态探索，最终确立了正六边形的模块化拼接形式，既符合自然界蜂巢的原始美感，又能适应城市阳台的垂直空间组装。</p>
                   <img 
-                src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/caotufengchao.png" 
+                src="/images/caotufengchao.png" 
                 alt="产品草图" 
                 className="rounded-2xl shadow-md w-full h-auto object-contain"
               />
@@ -245,7 +245,7 @@ export default function BeeHiveModal({ isOpen, onClose }) {
                   <h3 className="text-2xl font-bold">CMF 与爆炸图</h3>
                   <p className="text-gray-600">合理应用 ABS 塑料、防腐木、尼龙网布和亚克力玻璃。兼顾轻量化、耐用性与蜜蜂的生活习性。</p>
                   <img 
-                src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/baozhatufengchao.png" 
+                src="/images/baozhatufengchao.png" 
                 alt="CMF 爆炸图" 
                 className="rounded-2xl shadow-md w-full h-auto object-contain bg-white p-4"
               />
@@ -281,7 +281,7 @@ export default function BeeHiveModal({ isOpen, onClose }) {
                   <div className="relative w-full max-w-md">
                     <div className="absolute inset-0 bg-yellow-500 rounded-[3rem] transform -rotate-6 scale-105 opacity-60 blur-lg"></div>
                     <img 
-                  src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/yonghuliuchengfengchao.png" 
+                  src="/images/yonghuliuchengfengchao.png" 
                   alt="APP UI界面" 
                   className="relative z-10 rounded-[2.5rem] shadow-2xl border-8 border-white w-full h-auto object-contain bg-yellow-400 p-4"
                 />
@@ -332,7 +332,7 @@ export default function BeeHiveModal({ isOpen, onClose }) {
                 </div>
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl group bg-white">
                   <img 
-                    src="https://raw.githubusercontent.com/shuweijia/portfolio/refs/heads/main/fengchaochangjing.png" 
+                    src="/images/fengchaochangjing.png" 
                     alt="最终应用场景" 
                     className="w-full h-auto min-h-[400px] object-contain group-hover:scale-105 transition-transform duration-700"
                   />
