@@ -644,7 +644,13 @@ export default function App() {
             <div className="group flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
               {/* Visual Image Area */}
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
-                <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
+                <a
+                  href="https://wcnp7sqisgpt.aiforce.cloud/app/app_4jpb099bjexa5/timeline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="查看 MindAnchor 脑波锚点详情"
+                  className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-indigo-200"
+                >
                   {/* 1. 真实图片图层 (替换 src) */}
                   <img 
                     src="/images/mindanchor.png" 
@@ -659,7 +665,7 @@ export default function App() {
                     <h3 className="text-2xl font-bold tracking-widest text-slate-800 mb-2 drop-shadow-sm">MindAnchor App</h3>
                     <p className="text-slate-600 text-sm font-medium bg-white/60 px-4 py-1 rounded-full backdrop-blur-md border border-white/60">Interactive Mockup</p>
                   </div>
-                </div>
+                </a>
               </Reveal>
 
               {/* Content */}
@@ -701,7 +707,12 @@ export default function App() {
             {/* --- Project 2: CargoWare --- */}
             <div className="group flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center">
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
-                <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
+                <button
+                  type="button"
+                  onClick={() => setShowCRMModal(true)}
+                  aria-label="查看 CargoWare 国际货代 CRM 详情"
+                  className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-200"
+                >
                   <img 
                     src="/images/cargoware.png" 
                     alt="CargoWare Dashboard" 
@@ -713,7 +724,7 @@ export default function App() {
                     <h3 className="text-2xl font-bold tracking-widest text-slate-800 mb-2 drop-shadow-sm">CargoWare</h3>
                     <p className="text-slate-600 text-sm font-medium bg-white/60 px-4 py-1 rounded-full backdrop-blur-md border border-white/60">SaaS Interface Area</p>
                   </div>
-                </div>
+                </button>
               </Reveal>
 
               {/* Content */}
@@ -767,7 +778,12 @@ export default function App() {
             {/* --- Project 3: 蜓火 --- */}
             <div className="group flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
-                <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
+                <button
+                  type="button"
+                  onClick={() => setShowDragonflyModal(true)}
+                  aria-label="查看蜓火消防无人机详情"
+                  className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200"
+                >
                   <img 
                     src="/images/DRAGONFL UAV.jpg" 
                     alt="DRAGONFLY UAV" 
@@ -779,7 +795,7 @@ export default function App() {
                     <h3 className="text-2xl font-bold tracking-widest text-slate-800 mb-2 drop-shadow-sm">DRAGONFLY UAV</h3>
                     <p className="text-slate-600 text-sm font-medium bg-white/60 px-4 py-1 rounded-full backdrop-blur-md border border-white/60">Industrial Design</p>
                   </div>
-                </div>
+                </button>
               </Reveal>
 
               <Reveal delay={300} className="w-full lg:w-2/5 flex flex-col">
@@ -818,7 +834,12 @@ export default function App() {
             {/* --- Project 4: BEE HIVE --- */}
             <div className="group flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center">
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
-                <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
+                <button
+                  type="button"
+                  onClick={() => setShowBeeHiveModal(true)}
+                  aria-label="查看 BEE HIVE 城市智能养蜂详情"
+                  className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-200"
+                >
                   <img 
                     src="/images/BEE HIVE.png" 
                     alt="BEE HIVE IoT" 
@@ -830,7 +851,7 @@ export default function App() {
                     <h3 className="text-2xl font-bold tracking-widest text-slate-800 mb-2 drop-shadow-sm">BEE HIVE IoT</h3>
                     <p className="text-slate-600 text-sm font-medium bg-white/60 px-4 py-1 rounded-full backdrop-blur-md border border-white/60">Hardware Ecosystem</p>
                   </div>
-                </div>
+                </button>
               </Reveal>
 
               <Reveal delay={300} className="w-full lg:w-2/5 flex flex-col">
@@ -869,7 +890,12 @@ export default function App() {
             {/* --- Project 5: ICPB --- */}
             <div className="group flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
               <Reveal delay={100} className="w-full lg:w-3/5 h-[450px] sm:h-[550px] rounded-[2.5rem] bg-slate-100/50 border border-slate-200/60 p-4 relative overflow-hidden flex flex-col shadow-sm">
-                <div className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer">
+                <button
+                  type="button"
+                  onClick={() => setShowICPBModal(true)}
+                  aria-label="查看 ICPB 创意共享充电宝详情"
+                  className="w-full h-full rounded-[2rem] border border-white/60 relative overflow-hidden flex items-center justify-center flex-col shadow-inner group/img cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-200"
+                >
                   <img 
                     src="/images/ICPB.jpg" 
                     alt="ICPB Power Bank" 
@@ -881,7 +907,7 @@ export default function App() {
                     <h3 className="text-2xl font-bold tracking-widest text-slate-800 mb-2 drop-shadow-sm">ICPB Power Bank</h3>
                     <p className="text-slate-600 text-sm font-medium bg-white/60 px-4 py-1 rounded-full backdrop-blur-md border border-white/60">Consumer Electronics</p>
                   </div>
-                </div>
+                </button>
               </Reveal>
 
               <Reveal delay={300} className="w-full lg:w-2/5 flex flex-col">
