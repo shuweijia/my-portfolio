@@ -128,176 +128,18 @@ export default function CRMCaseStudyModal({ isOpen, onClose }) {
         {/* Section 2: Large Prototype Mockup */}
         <section className="mb-32">
           <div className="w-full rounded-2xl border border-zinc-200 bg-white overflow-hidden shadow-2xl">
-            {/* Window Controls */}
             <div className="h-10 border-b border-zinc-200 flex items-center px-4 gap-2 bg-zinc-50">
               <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
               <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
               <div className="ml-4 text-xs text-zinc-500 font-mono">CargoWare 国际货代云平台 - 销售模块原型</div>
             </div>
-            
-            {/* App Layout Mockup based on PDF */}
-            <div className="flex h-[800px] text-sm">
-              {/* Sidebar */}
-              <div className="w-16 md:w-48 border-r border-zinc-200 bg-zinc-50 flex flex-col p-4">
-                <div className="font-bold text-zinc-900 mb-8 hidden md:block">CargoWare</div>
-                <div className="space-y-4 text-zinc-600">
-                  <div className="flex items-center gap-3 hover:text-zinc-900 cursor-pointer"><LayoutTemplate className="w-5 h-5"/> <span className="hidden md:block">基础资料</span></div>
-                  <div className="flex items-center gap-3 hover:text-zinc-900 cursor-pointer"><BarChart3 className="w-5 h-5"/> <span className="hidden md:block">运价</span></div>
-                  <div className="flex items-center gap-3 text-indigo-600 cursor-pointer"><Users className="w-5 h-5"/> <span className="hidden md:block font-medium">销售跟进</span></div>
-                  <div className="flex items-center gap-3 hover:text-zinc-900 cursor-pointer"><Calendar className="w-5 h-5"/> <span className="hidden md:block">销售计划</span></div>
-                </div>
-              </div>
-
-              {/* Main Content Area */}
-              <div className="flex-1 flex flex-col bg-white">
-                {/* Topbar */}
-                <div className="h-14 border-b border-zinc-200 flex items-center justify-between px-6">
-                  <div className="text-xs text-amber-600 bg-amber-50 px-3 py-1 rounded-full flex items-center gap-2 border border-amber-200">
-                    <AlertCircle className="w-3 h-3" /> 公告: 本周六23:00 系统例行维护升级
-                  </div>
-                  <div className="flex items-center gap-4 text-zinc-600">
-                    <Search className="w-4 h-4" />
-                    <div className="flex items-center gap-2 text-xs">
-                      <div className="w-6 h-6 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-medium">W</div>
-                      管理员公司 上海总公司 销售部
-                    </div>
-                  </div>
-                </div>
-
-                {/* Left-Right Layout Content */}
-                <div className="flex-1 flex overflow-hidden">
-                  
-                  {/* Left List */}
-                  <div className="w-1/3 border-r border-zinc-200 flex flex-col bg-zinc-50/50">
-                    <div className="p-4 border-b border-zinc-200">
-                      <div className="flex justify-between items-center mb-4">
-                        <h2 className="text-zinc-900 font-medium">客户列表</h2>
-                        <ListFilter className="w-4 h-4 text-zinc-500" />
-                      </div>
-                      <div className="bg-white rounded-md px-3 py-2 flex items-center gap-2 text-zinc-400 border border-zinc-200 shadow-sm">
-                        <Search className="w-4 h-4" />
-                        <span className="text-xs">搜索公司名称/联系人</span>
-                      </div>
-                    </div>
-                    
-                    <div className="flex-1 overflow-y-auto p-2 space-y-1">
-                      {/* Active List Item */}
-                      <div className="p-3 bg-indigo-50 border border-indigo-200 rounded-lg cursor-pointer">
-                        <div className="text-indigo-700 font-medium mb-1">上海巴士悦信物流有限公司</div>
-                        <div className="flex justify-between items-center text-xs text-zinc-600 mb-2">
-                          <span>张经理</span>
-                          <span className="bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded border border-indigo-200">合作中</span>
-                        </div>
-                        <div className="flex gap-2">
-                          <span className="text-[10px] bg-white px-1.5 py-0.5 rounded border border-zinc-200 text-zinc-500">海运出口</span>
-                          <span className="text-[10px] bg-white px-1.5 py-0.5 rounded border border-zinc-200 text-zinc-500">空运出口</span>
-                        </div>
-                      </div>
-                      {/* Inactive Items */}
-                      {[
-                        { name: "深圳环洋国际货运代理", tag: "明确需求" },
-                        { name: "宁波港联运通", tag: "初步意向" },
-                        { name: "北京中铁快运", tag: "暂无需求" }
-                      ].map((item, i) => (
-                        <div key={i} className="p-3 hover:bg-zinc-100 border border-transparent rounded-lg cursor-pointer transition-colors">
-                          <div className="text-zinc-800 mb-1 font-medium">{item.name}</div>
-                          <div className="flex justify-between items-center text-xs text-zinc-500">
-                            <span>李总</span>
-                            <span className="bg-zinc-100 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">{item.tag}</span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Right Detail Area */}
-                  <div className="w-2/3 flex flex-col overflow-y-auto bg-white">
-                    {/* KPI Header */}
-                    <div className="p-6 pb-0 flex gap-6">
-                      <div className="bg-white border border-zinc-200 shadow-sm rounded-xl p-4 flex-1 flex items-center justify-between">
-                        <div>
-                          <div className="text-zinc-500 text-xs mb-1">本月跟进次数</div>
-                          <div className="text-2xl font-bold text-zinc-900">24 <span className="text-xs font-normal text-green-600 ml-2">↑ 12%</span></div>
-                        </div>
-                        <div className="w-10 h-10 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600">
-                          <MessageSquare className="w-5 h-5" />
-                        </div>
-                      </div>
-                      <div className="bg-white border border-zinc-200 shadow-sm rounded-xl p-4 flex-1 flex items-center justify-between">
-                        <div>
-                          <div className="text-zinc-500 text-xs mb-1">本月拜访次数</div>
-                          <div className="text-2xl font-bold text-zinc-900">8 <span className="text-xs font-normal text-red-500 ml-2">↓ 5%</span></div>
-                        </div>
-                        <div className="w-10 h-10 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600">
-                          <MapPin className="w-5 h-5" />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="p-6 flex-1">
-                      {/* Add Record Card */}
-                      <div className="bg-white border border-zinc-200 shadow-sm rounded-xl p-5 mb-6">
-                        <h3 className="text-zinc-900 font-medium flex items-center gap-2 mb-4">
-                          <Clock className="w-4 h-4 text-indigo-600" /> 新增跟进记录
-                        </h3>
-                        <div className="grid grid-cols-3 gap-4 mb-4">
-                          <div>
-                            <label className="block text-xs text-zinc-500 mb-1">跟进时间</label>
-                            <div className="bg-zinc-50 border border-zinc-200 rounded px-3 py-2 text-zinc-800 text-sm flex justify-between">
-                              2026/01/30 <Calendar className="w-4 h-4 text-zinc-400" />
-                            </div>
-                          </div>
-                          <div>
-                            <label className="block text-xs text-zinc-500 mb-1">跟进方式</label>
-                            <div className="bg-zinc-50 border border-zinc-200 rounded px-3 py-2 text-zinc-800 text-sm flex justify-between">
-                              电话沟通 <ChevronRight className="w-4 h-4 text-zinc-400 rotate-90" />
-                            </div>
-                          </div>
-                          <div>
-                            <label className="block text-xs text-zinc-500 mb-1">跟进结果</label>
-                            <div className="bg-zinc-50 border border-zinc-200 rounded px-3 py-2 text-zinc-800 text-sm flex justify-between">
-                              初步意向 <ChevronRight className="w-4 h-4 text-zinc-400 rotate-90" />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="mb-4">
-                          <label className="block text-xs text-zinc-500 mb-1">跟进内容</label>
-                          <div className="bg-zinc-50 border border-zinc-200 rounded p-3 text-zinc-400 text-sm h-24">
-                            请输入详细的跟进情况、客户反馈及后续计划...
-                          </div>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <div className="text-xs text-indigo-600 flex items-center gap-1 cursor-pointer font-medium">
-                            <LinkIcon className="w-3 h-3" /> 添加附件/照片
-                          </div>
-                          <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors shadow-sm">
-                            + 保存记录
-                          </button>
-                        </div>
-                      </div>
-
-                      {/* History Timeline */}
-                      <div>
-                        <h3 className="text-zinc-900 font-medium mb-4 text-sm">历史跟进 (1)</h3>
-                        <div className="relative pl-6 border-l-2 border-zinc-200 pb-4">
-                          <div className="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1 border-2 border-white"></div>
-                          <div className="flex items-center gap-3 mb-2">
-                            <span className="text-zinc-800 font-medium">2023-10-25</span>
-                            <span className="bg-red-50 border border-red-100 text-red-600 text-xs px-2 py-0.5 rounded">上门拜访</span>
-                            <span className="bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs px-2 py-0.5 rounded">明确需求</span>
-                          </div>
-                          <p className="text-zinc-600 text-sm bg-zinc-50 p-3 rounded-lg border border-zinc-200">
-                            拜访客户：确认下季度海运出口舱位需求。客户反馈近期美西航线运价波动大，希望锁定长协价。
-                          </p>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
+            <div className="bg-white">
+              <img
+                src="/images/cargoware.png"
+                alt="CargoWare 国际货代 CRM 销售跟进模块界面"
+                className="block w-full h-auto"
+              />
             </div>
           </div>
         </section>
